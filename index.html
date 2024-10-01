@@ -3,9 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Metal Homes Enterprises LLC</title>
+    <title>Somerset Coffeehaus</title>
+    <link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
 </head>
 <body>
-    <h1>Digital Marketing | Assignment 2</h1>
+    <div>
+        <nav>
+            <div class="menu">
+                <div class="logo">
+                    <a href="index.html"><img src="/img/Somerset-Coffehaus-white.webp" alt=""></a>
+                </div>
+
+                <input type="checkbox" id="menu-toggle">
+
+                <!-- Using the SVG for the hamburger menu -->
+                <label for="menu-toggle" class="hamburger">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                    </svg>
+                </label>
+
+                <ul>
+                    <!-- Corrected: Close Button as a label linked to checkbox -->
+                    <li>
+                        <label for="menu-toggle" class="close-menu"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></label>
+                    </li>
+                    <li><a class="nav-link" href="index.html">Home</a></li>
+                    <li><a class="nav-link" href="#">About Us</a></li>
+                    <li><a class="nav-link" href="#">Page 1</a></li>
+                    <li><a class="nav-link" href="#">Page 2</a></li>
+                    <li><a class="nav-link" href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="introduction">
+        <div class="introduction-sum">
+            <h1 class="main-title">Somerset Coffeehaus</h1>
+            <div class="secondary-sum">
+                <p>
+                    Where every sip tells a story
+                </p>
+                <a class="btn-link">Contact Us</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-container">
+        <div class="card">
+            <div class="card-front card-1">
+                <h2>TODAY'S SPECIAL</h2>
+            </div>
+            <div class="card-back">
+                <h2>MY VEGETARIAN JOURNEY</h2>
+                <div class="card-body">
+                    <p>A brief dive into how I changed my diet.</p>
+                    <button id="button"><a href="/blogs/my-vegetarian-journey.html">View</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-front card-2">
+                <h2>FAVORITES</h2>
+            </div>
+            <div class="card-back">
+                <h2>THE BEGINNING, MIDDLE, AND END</h2>
+                <div class="card-body">
+                    <p>Last Round Lili</p>
+                    <button id="button"><a href="/blogs/the-beginning-middle-end.html">View</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
