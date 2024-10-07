@@ -70,21 +70,6 @@ img {
 }
 
 /* Navbar */
-.contact-number {
-    margin: 0;
-    padding: 0;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.contact-number p {
-    font-size: 12px;
-    font-family: 'Inter', sans-serif;
-    color: white;
-    margin: 0.5rem;
-}
-
 .menu {
     display: flex;
     justify-content: space-between;
