@@ -1,19 +1,23 @@
 body {
     margin: 0;
-    background-color: #d3d3d3;
+    background-color: #fff;
 }
 
-h1, a {
-    font-family: 'Inter', sans-serif;
-}
-
-h2, p {
+h1, h2, h3, p, a {
     font-family: 'Literata', serif;
 }
 
 h2 {
     color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: white;
     font-weight: 400;
+    font-size: 20px;
 }
 
 nav {
@@ -30,7 +34,39 @@ img {
     margin: 0.5rem 0;
 }
 
+/* LINKS */
+.btn-link {
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0.8rem;
+    background:linear-gradient(to right, #000000 50%, #ff3838 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color: white;
+    cursor: pointer;
+    transition: background-position 0.5s ease, color 0.5s ease;
+}
+
+.btn-link:hover {
+    background-position: left bottom;
+}
+
 /* Navbar */
+.contact-number {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-number p {
+    font-size: 12px;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    margin: 0.5rem;
+}
+
 .menu {
     display: flex;
     justify-content: space-between;
@@ -128,8 +164,13 @@ input[type="checkbox"]:checked ~ ul {
     padding: 0 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: start;
+    align-items: start;
+}
+
+.introduction-sum p {
+    font-style: italic;
+    letter-spacing: 1.5px;
 }
 
 .main-title {
@@ -142,8 +183,7 @@ input[type="checkbox"]:checked ~ ul {
     width: 100%;
     margin-bottom: 2rem;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -156,93 +196,67 @@ input[type="checkbox"]:checked ~ ul {
     padding-bottom: 1rem;
 }
 
-/* LINKS */
-.btn-link {
-    font-size: 15px;
-    font-weight: 600;
-    padding: 0.8rem;
-    background:linear-gradient(to right, #000000 50%, #ff3838 50%);
-    background-size: 200% 100%;
-    background-position: right bottom;
+/* SHORT DESCRIPTION */
+.short-des {
     color: white;
-    cursor: pointer;
-    transition: background-position 0.5s ease, color 0.5s ease;
+    background-color: black;
+    padding: 2rem;
 }
 
-.btn-link:hover {
-    background-position: left bottom;
+.short-des p {
+    font-weight: 300;
 }
 
 /* CARDS */
 .card-container {
-    perspective: 1000px;
-    padding: 1rem;
+    width: 100%;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
 .card {
-    width: 18rem;
+    margin: 0.8rem;
+    width: 50rem;
     height: 18rem;
-    margin: 0.1rem;
-    padding: 1rem;
-    border-radius: 0;
-    background-color: transparent;
-    position: relative;
-    transform-style: preserve-3d;
-    transition: transform 0.6s;
-}
-
-.card-front,
-.card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
+    background-color: black;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    padding: 1rem;
-    top: 0;
-    left: 0;
-}
-
-.card-back {
-    background-color: #4b4b4b;
-    transform: rotateY(180deg);
+    transition: transform 0.3s ease;
 }
 
 .card:hover {
-    transform: rotateY(-180deg);
-}
-
-.card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.card-body p {
-    margin-bottom: 5rem;
+    transform: translateY(-0.5rem);
+    box-shadow: 2px 2px 4px black;
 }
 
 .card-1 {
-    background-image: url('/img/glass-coffee-cups.webp');
+    background-image: url('/img/coffee-in-hands.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .card-2 {
-    background-image: url('/img/glass-coffee-cups.webp');
+    background-image: url('/img/bakery-shelf.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #000000;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer svg {
+    width: 2rem;
+    height: 2rem;
 }
 
 /* Media Query */
@@ -250,6 +264,11 @@ input[type="checkbox"]:checked ~ ul {
     .main-title {
         text-align: center;
         font-size: 28px;
+    }
+
+    .introduction-sum {
+        display: flex;
+        justify-content: space-between;
     }
 
     .secondary-sum {
@@ -260,17 +279,14 @@ input[type="checkbox"]:checked ~ ul {
     }
 
     .card-container {
-        padding: 0;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
 
     .card {
-        margin: 1rem;
-        width: 22rem;
-        height: 22rem;
+        margin: 0.5rem;
+        width: 18rem;
+        height: 18rem;
     }
 }
 
