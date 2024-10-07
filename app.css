@@ -365,8 +365,10 @@ input[type="checkbox"]:checked ~ ul {
     }
 
     .introduction-sum {
+        text-align: center;
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
     .secondary-sum {
@@ -383,8 +385,8 @@ input[type="checkbox"]:checked ~ ul {
 
     .card {
         margin: 0.5rem;
-        width: 18rem;
-        height: 18rem;
+        width: 22rem;
+        height: 22rem;
     }
 
     .shop-menu h2 {
