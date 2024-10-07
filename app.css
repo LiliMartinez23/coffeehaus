@@ -174,7 +174,7 @@ input[type="checkbox"]:checked ~ ul {
 .introduction-sum {
     width: 100%;
     height: 500px;
-    background-image: url('/img/glass-coffee-cups.png');
+    background-image: url('img/glass-coffee-cups.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -250,14 +250,14 @@ input[type="checkbox"]:checked ~ ul {
 }
 
 .card-1 {
-    background-image: url('/img/coffee-in-hands.png');
+    background-image: url('img/coffee-in-hands.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .card-2 {
-    background-image: url('/img/bakery-shelf.png');
+    background-image: url('img/bakery-shelf.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -291,7 +291,7 @@ input[type="checkbox"]:checked ~ ul {
 .shop-menu {
     text-align: center;
     padding: 1rem;
-    background-image: url('/img/chalkboard-background.png');
+    background-image: url('img/chalkboard-background.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
