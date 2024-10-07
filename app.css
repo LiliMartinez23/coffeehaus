@@ -26,7 +26,7 @@ ul {
 
 li {
     color: white;
-    font-size: 20px;
+    font-size: 30px;
     font-family: 'Amatic SC', sans-serif;
     list-style: none;
 }
@@ -304,6 +304,7 @@ input[type="checkbox"]:checked ~ ul {
 }
 
 .shop-menu h2 {
+    font-size: 35px;
     font-family: 'Fredericka the Great', serif;
     font-weight: 100;
 }
@@ -354,6 +355,10 @@ input[type="checkbox"]:checked ~ ul {
 
 /* Media Query */
 @media (max-width: 430px) {
+    li {
+        font-size: 28px;
+    }
+
     .main-title {
         text-align: center;
         font-size: 28px;
@@ -380,6 +385,10 @@ input[type="checkbox"]:checked ~ ul {
         margin: 0.5rem;
         width: 18rem;
         height: 18rem;
+    }
+
+    .shop-menu h2 {
+        font-size: 30px;
     }
 
     .coffee-section {
