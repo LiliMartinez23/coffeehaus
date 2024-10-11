@@ -24,7 +24,11 @@ ul {
     padding: 0;
 }
 
-li {
+.ul {
+    margin-left: 2rem;
+}
+
+.li {
     color: white;
     font-size: 30px;
     font-family: 'Amatic SC', sans-serif;
@@ -54,9 +58,10 @@ img {
 
 /* LINKS */
 .btn-link {
+    border-radius: 0.5rem;
     font-size: 15px;
     font-weight: 600;
-    padding: 0.8rem;
+    padding: 0.8rem 3rem;
     background:linear-gradient(to right, #000000 50%, #ff3838 50%);
     background-size: 200% 100%;
     background-position: right bottom;
@@ -199,6 +204,12 @@ input[type="checkbox"]:checked ~ ul {
     padding-bottom: 1rem;
 }
 
+.third-sum {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
 /* SHORT DESCRIPTION */
 .short-des {
     color: white;
@@ -328,6 +339,10 @@ input[type="checkbox"]:checked ~ ul {
 .footer {
     background-color: #000000;
     padding: 1rem;
+}
+
+.sm-container {
+    padding: 0.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -340,7 +355,7 @@ input[type="checkbox"]:checked ~ ul {
 
 /* Media Query */
 @media (max-width: 430px) {
-    li {
+    .li {
         font-size: 28px;
     }
 
