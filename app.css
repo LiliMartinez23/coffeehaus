@@ -339,10 +339,6 @@ input[type="checkbox"]:checked ~ ul {
 .footer {
     background-color: #000000;
     padding: 1rem;
-}
-
-.sm-container {
-    padding: 0.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
