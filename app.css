@@ -349,6 +349,45 @@ input[type="checkbox"]:checked ~ ul {
     height: 2rem;
 }
 
+/* EVENTS PAGE */
+
+/* ABOUT US PAGE */
+.about-us-title {
+    text-align: start;
+    margin-left: 1rem;
+}
+
+.about-us-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us-text {
+    padding: 2rem;
+    width: 50%;
+    font-size: 12px;
+}
+
+.about-us-text-2 {
+    padding: 2rem;
+    font-size: 12px;
+}
+
+.about-us-img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.about-us-img img {
+    width: 90%;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+
 /* Media Query */
 @media (max-width: 430px) {
     .li {
@@ -402,6 +441,26 @@ input[type="checkbox"]:checked ~ ul {
     .favorites {
         display: flex;
         flex-direction: column;
+    }
+
+    .about-us-title {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .about-us-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-us-text,
+    .about-us-text-2 {
+        width: 90%;
+        padding: 0;
+    }
+
+    .about-us-img {
+        width: 100%;
     }
 }
 
